@@ -1,11 +1,11 @@
-package ar.com.pachisoft.argenfighter;
+package ar.com.pachisoft.argenfighter.world.level;
 
 /**
  * Point marking the floor limits on each level
  *
- * A set of PathLimit defines a polygon where the player is free to walk.
+ * A set of PathLimits defines a polygon where the player is free to walk.
  */
-public class PathLimit implements Comparable {
+public class PathLimit implements Comparable<PathLimit> {
     private final int x;
     private final int y;
 
@@ -45,17 +45,11 @@ public class PathLimit implements Comparable {
      * @return Comparison result
      */
     @Override
-    public int compareTo(Object o) {
-        if (o.getClass() == this.getClass()) {
-            PathLimit path = (PathLimit) o;
-
-            if (x != path.getX()) {
-                return x - path.getX();
-            } else {
-                return y - path.getY();
-            }
+    public int compareTo(PathLimit o) {
+        if (x != o.getX()) {
+            return x - o.getX();
         } else {
-            return this.compareTo(o);
+            return y - o.getY();
         }
     }
 }

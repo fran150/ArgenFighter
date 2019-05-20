@@ -1,4 +1,4 @@
-package ar.com.pachisoft.argenfighter;
+package ar.com.pachisoft.argenfighter.world.level;
 
 /**
  * A game level

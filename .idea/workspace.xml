@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7f0fb62-1017-445f-9ed1-0ebb088441ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/LevelPath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/PathLimit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/PathLimitType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/exceptions/PathLimitsEmptyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ar/com/pachisoft/argenfighter/tests/LevelPathTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/Background.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/Background.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/Level.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/Background.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/Background.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/BackgroundStripe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/BackgroundStripe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/Level.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/LevelPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/LevelPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/PathLimit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/PathLimit.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,7 +25,20 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ar/com/pachisoft/argenfighter/tests/LevelPathTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="219">
+              <caret line="80" column="24" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -53,8 +71,18 @@
         <option value="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/MainWindow.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/Background.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/Level.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/PathLimitTypes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/PathLimitTypes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/PATH_LIMIT_TYPE.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/PathLimit.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/LevelPath.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/exceptions/PathLimitsEmptyException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/Level.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/PathLimit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/PathLimitType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/LevelPath.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ar/com/pachisoft/argenfighter/tests/LevelPathTest.java" />
       </list>
     </option>
   </component>
@@ -107,7 +135,41 @@
               <item name="ArgenFighter" type="b2602c69:ProjectViewProjectNode" />
               <item name="ArgenFighter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="argenfighter" type="462c0819:PsiDirectoryNode" />
+              <item name="level" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ArgenFighter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArgenFighter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="argenfighter" type="462c0819:PsiDirectoryNode" />
+              <item name="level" type="462c0819:PsiDirectoryNode" />
+              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ArgenFighter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArgenFighter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ArgenFighter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArgenFighter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ArgenFighter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArgenFighter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ArgenFighter" type="b2602c69:ProjectViewProjectNode" />
@@ -124,12 +186,15 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ar.com.pachisoft.argenfighter" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter" />
     </key>
@@ -146,7 +211,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.LevelPathTest">
     <configuration name="Game" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ar.com.pachisoft.argenfighter.Game" />
       <module name="ArgenFighter" />
@@ -160,6 +225,77 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LevelPathTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArgenFighter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ar.com.pachisoft.argenfighter.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ar.com.pachisoft.argenfighter.tests" />
+      <option name="MAIN_CLASS_NAME" value="ar.com.pachisoft.argenfighter.tests.LevelPathTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LevelPathTest.OutsideBounds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArgenFighter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ar.com.pachisoft.argenfighter.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ar.com.pachisoft.argenfighter.tests" />
+      <option name="MAIN_CLASS_NAME" value="ar.com.pachisoft.argenfighter.tests.LevelPathTest" />
+      <option name="METHOD_NAME" value="OutsideBounds" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LevelPathTest.addition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArgenFighter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ar.com.pachisoft.argenfighter.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ar.com.pachisoft.argenfighter.tests" />
+      <option name="MAIN_CLASS_NAME" value="ar.com.pachisoft.argenfighter.tests.LevelPathTest" />
+      <option name="METHOD_NAME" value="addition" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyFirstJUnitJupiterTests.addition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArgenFighter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ar.com.pachisoft.argenfighter.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ar.com.pachisoft.argenfighter.tests" />
+      <option name="MAIN_CLASS_NAME" value="ar.com.pachisoft.argenfighter.tests.MyFirstJUnitJupiterTests" />
+      <option name="METHOD_NAME" value="addition" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.LevelPathTest" />
+        <item itemvalue="JUnit.LevelPathTest.OutsideBounds" />
+        <item itemvalue="JUnit.LevelPathTest.addition" />
+        <item itemvalue="JUnit.MyFirstJUnitJupiterTests.addition" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -186,14 +322,54 @@
       <option name="project" value="LOCAL" />
       <updated>1556773281895</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Sketching some more classes">
+      <created>1557230707106</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1557230707106</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="LevelPathTest_addition - 2019.05.18 at 21h 32m 15s.xml">
+      <configuration name="LevelPathTest.addition" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LevelPathTest_addition - 2019.05.18 at 21h 32m 46s.xml">
+      <configuration name="LevelPathTest.addition" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LevelPathTest_addition - 2019.05.18 at 21h 33m 48s.xml">
+      <configuration name="LevelPathTest.addition" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LevelPathTest_addition - 2019.05.18 at 21h 34m 40s.xml">
+      <configuration name="LevelPathTest.addition" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LevelPathTest_OutsideBounds - 2019.05.19 at 19h 54m 06s.xml">
+      <configuration name="LevelPathTest.OutsideBounds" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LevelPathTest_OutsideBounds - 2019.05.19 at 19h 57m 54s.xml">
+      <configuration name="LevelPathTest.OutsideBounds" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LevelPathTest_OutsideBounds - 2019.05.19 at 20h 12m 19s.xml">
+      <configuration name="LevelPathTest.OutsideBounds" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LevelPathTest_OutsideBounds - 2019.05.19 at 20h 12m 40s.xml">
+      <configuration name="LevelPathTest.OutsideBounds" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LevelPathTest_OutsideBounds - 2019.05.19 at 20h 22m 09s.xml">
+      <configuration name="LevelPathTest.OutsideBounds" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LevelPathTest_OutsideBounds - 2019.05.19 at 20h 57m 28s.xml">
+      <configuration name="LevelPathTest.OutsideBounds" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="27" width="1299" height="741" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25379092" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49753696" visible="true" weight="0.27134877" />
+      <window_info id="Structure" order="1" sideWeight="0.50246304" side_tool="true" weight="0.27134877" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -201,14 +377,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289256" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3294893" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3289256" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.55041325" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.553719" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3289256" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -222,12 +398,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Sketching some classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sketching some classes" />
+    <MESSAGE value="Sketching some more classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sketching some more classes" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/com/pachisoft/world/WorldPosition.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/com/pachisoft/world/Level.java" />
@@ -248,13 +422,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/BackgroundStripe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/KeyHandler.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -264,22 +431,6 @@
           <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/GameLoop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="73" column="18" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#688#689#0" expanded="true" />
-            <element signature="e#733#734#0" expanded="true" />
-            <element signature="e#890#891#0" expanded="true" />
-            <element signature="e#920#921#0" expanded="true" />
-            <element signature="e#1098#1099#0" expanded="true" />
-            <element signature="e#1132#1133#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -312,13 +463,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/Background.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -340,33 +484,113 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/LevelPath.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/GameLoop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+        <state relative-caret-position="-9">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+            <element signature="e#732#733#0" expanded="true" />
+            <element signature="e#890#891#0" expanded="true" />
+            <element signature="e#931#932#0" expanded="true" />
+            <element signature="e#1098#1099#0" expanded="true" />
+            <element signature="e#1142#1143#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/PATH_LIMIT_TYPE.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="38" lean-forward="true" selection-start-column="38" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.3.1/junit-platform-commons-1.3.1.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="229" selection-start-line="229" selection-end-line="229" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-11-oracle/lib/src.zip!/java.base/java/lang/Exception.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="65" column="23" lean-forward="true" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/BackgroundStripe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/Background.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/exceptions/PathLimitsEmptyException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="37" />
+          <folding>
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/PathLimit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="45" column="7" lean-forward="true" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/PathLimitType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/Level.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/LevelPath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1907">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/PathLimit.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ar/com/pachisoft/argenfighter/tests/LevelPathTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="219">
+          <caret line="80" column="24" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="24" />
           <folding>
-            <element signature="e#567#568#0" expanded="true" />
-            <element signature="e#591#592#0" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
-            <element signature="e#760#761#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/Level.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -387,6 +611,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -409,6 +634,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
+          <last-edited>11</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -425,7 +651,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -433,6 +658,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: org.apiguardian:apiguardian-api:1.0.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
