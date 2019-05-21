@@ -73,7 +73,7 @@ public class LevelPath {
         }
 
         // If the specified x is greater than the rightmost limit return that limit
-        if (x >= rightMost.getY()) {
+        if (x >= rightMost.getX()) {
             return rightMost.getY();
         }
 
@@ -104,7 +104,7 @@ public class LevelPath {
         double y2 = right.getY();
 
         double slope = (y2 - y1) / (x2 - x1);
-        double result = slope * ((x - x1) + y1);
+        double result = (slope * (x - x1)) + y1;
 
         return (int) result;
     }

@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7f0fb62-1017-445f-9ed1-0ebb088441ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/PathLimitType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/exceptions/PathLimitsEmptyException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ar/com/pachisoft/argenfighter/tests/LevelPathTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/Background.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/Background.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/BackgroundStripe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/BackgroundStripe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/Level.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/LevelPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/LevelPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/PathLimit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/PathLimit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/Level.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/LevelPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/LevelPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ar/com/pachisoft/argenfighter/tests/LevelPathTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ar/com/pachisoft/argenfighter/tests/LevelPathTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,15 +19,12 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ar/com/pachisoft/argenfighter/tests/LevelPathTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/Level.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="80" column="24" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="270">
+              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -48,6 +39,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="fran150 &lt;panchi150@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -78,11 +74,11 @@
         <option value="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/PathLimit.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/LevelPath.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/exceptions/PathLimitsEmptyException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/Level.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/PathLimit.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/PathLimitType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/LevelPath.java" />
         <option value="$PROJECT_DIR$/src/test/java/ar/com/pachisoft/argenfighter/tests/LevelPathTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/LevelPath.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/Level.java" />
       </list>
     </option>
   </component>
@@ -97,7 +93,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -181,6 +176,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -211,7 +207,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LevelPathTest">
+  <component name="RunManager" selected="JUnit.LevelPathTest.ShouldIterpolateBetweenPoints">
     <configuration name="Game" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ar.com.pachisoft.argenfighter.Game" />
       <module name="ArgenFighter" />
@@ -256,6 +252,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LevelPathTest.ShouldIterpolateBetweenPoints" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArgenFighter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ar.com.pachisoft.argenfighter.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ar.com.pachisoft.argenfighter.tests" />
+      <option name="MAIN_CLASS_NAME" value="ar.com.pachisoft.argenfighter.tests.LevelPathTest" />
+      <option name="METHOD_NAME" value="ShouldIterpolateBetweenPoints" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LevelPathTest.addition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArgenFighter" />
       <extension name="coverage">
@@ -290,8 +302,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LevelPathTest" />
+        <item itemvalue="JUnit.LevelPathTest.ShouldIterpolateBetweenPoints" />
         <item itemvalue="JUnit.LevelPathTest.OutsideBounds" />
+        <item itemvalue="JUnit.LevelPathTest" />
         <item itemvalue="JUnit.LevelPathTest.addition" />
         <item itemvalue="JUnit.MyFirstJUnitJupiterTests.addition" />
       </list>
@@ -329,46 +342,53 @@
       <option name="project" value="LOCAL" />
       <updated>1557230707106</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added a level path and started testing">
+      <created>1558313561422</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1558313561422</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LevelPathTest_addition - 2019.05.18 at 21h 32m 15s.xml">
-      <configuration name="LevelPathTest.addition" configurationId="JUnit" />
+    <history-entry file="LevelPathTest - 2019.05.19 at 21h 51m 17s.xml">
+      <configuration name="LevelPathTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LevelPathTest_addition - 2019.05.18 at 21h 32m 46s.xml">
-      <configuration name="LevelPathTest.addition" configurationId="JUnit" />
+    <history-entry file="LevelPathTest - 2019.05.21 at 01h 05m 59s.xml">
+      <configuration name="LevelPathTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LevelPathTest_addition - 2019.05.18 at 21h 33m 48s.xml">
-      <configuration name="LevelPathTest.addition" configurationId="JUnit" />
+    <history-entry file="LevelPathTest - 2019.05.21 at 01h 14m 33s.xml">
+      <configuration name="LevelPathTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LevelPathTest_addition - 2019.05.18 at 21h 34m 40s.xml">
-      <configuration name="LevelPathTest.addition" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LevelPathTest_OutsideBounds - 2019.05.19 at 19h 54m 06s.xml">
+    <history-entry file="LevelPathTest_OutsideBounds - 2019.05.21 at 01h 17m 29s.xml">
       <configuration name="LevelPathTest.OutsideBounds" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LevelPathTest_OutsideBounds - 2019.05.19 at 19h 57m 54s.xml">
+    <history-entry file="LevelPathTest_OutsideBounds - 2019.05.21 at 01h 18m 36s.xml">
       <configuration name="LevelPathTest.OutsideBounds" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LevelPathTest_OutsideBounds - 2019.05.19 at 20h 12m 19s.xml">
-      <configuration name="LevelPathTest.OutsideBounds" configurationId="JUnit" />
+    <history-entry file="LevelPathTest_ShouldIterpolateBetweenPoints - 2019.05.21 at 01h 22m 03s.xml">
+      <configuration name="LevelPathTest.ShouldIterpolateBetweenPoints" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LevelPathTest_OutsideBounds - 2019.05.19 at 20h 12m 40s.xml">
-      <configuration name="LevelPathTest.OutsideBounds" configurationId="JUnit" />
+    <history-entry file="LevelPathTest_ShouldIterpolateBetweenPoints - 2019.05.21 at 01h 23m 47s.xml">
+      <configuration name="LevelPathTest.ShouldIterpolateBetweenPoints" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LevelPathTest_OutsideBounds - 2019.05.19 at 20h 22m 09s.xml">
-      <configuration name="LevelPathTest.OutsideBounds" configurationId="JUnit" />
+    <history-entry file="LevelPathTest_ShouldIterpolateBetweenPoints - 2019.05.21 at 01h 24m 25s.xml">
+      <configuration name="LevelPathTest.ShouldIterpolateBetweenPoints" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LevelPathTest_OutsideBounds - 2019.05.19 at 20h 57m 28s.xml">
-      <configuration name="LevelPathTest.OutsideBounds" configurationId="JUnit" />
+    <history-entry file="LevelPathTest_ShouldIterpolateBetweenPoints - 2019.05.21 at 01h 36m 07s.xml">
+      <configuration name="LevelPathTest.ShouldIterpolateBetweenPoints" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LevelPathTest_ShouldIterpolateBetweenPoints - 2019.05.21 at 01h 37m 26s.xml">
+      <configuration name="LevelPathTest.ShouldIterpolateBetweenPoints" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="27" width="1299" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49753696" visible="true" weight="0.27134877" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49753696" visible="true" weight="0.27613726" />
       <window_info id="Structure" order="1" sideWeight="0.50246304" side_tool="true" weight="0.27134877" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -377,14 +397,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289256" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3289256" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3289256" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5190083" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.553719" />
+      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.5553719" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3289256" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -399,7 +419,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Sketching some classes" />
     <MESSAGE value="Sketching some more classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sketching some more classes" />
+    <MESSAGE value="Added a level path and started testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a level path and started testing" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java" />
@@ -500,24 +521,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/PATH_LIMIT_TYPE.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/PATH_LIMIT_TYPE.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="38" lean-forward="true" selection-start-column="38" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.3.1/junit-platform-commons-1.3.1.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="229" selection-start-line="229" selection-end-line="229" />
         </state>
       </provider>
     </entry>
@@ -529,13 +537,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/BackgroundStripe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/Background.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
@@ -567,30 +568,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/Level.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.3.1/junit-jupiter-api-5.3.1.jar!/org/junit/jupiter/api/function/Executable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="122">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/LevelPath.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.3.1/junit-platform-commons-1.3.1.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1907">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="93">
+          <caret line="229" selection-start-line="229" selection-end-line="229" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ar/com/pachisoft/argenfighter/tests/LevelPathTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="80" column="24" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="24" />
+        <state relative-caret-position="264">
+          <caret line="78" column="23" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/Background.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/LevelPath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-441">
+          <caret line="113" column="15" selection-start-line="113" selection-start-column="15" selection-end-line="113" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/com/pachisoft/argenfighter/world/level/Level.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
         </state>
       </provider>
     </entry>

@@ -7,11 +7,14 @@ package ar.com.pachisoft.argenfighter.world.level;
  *
  */
 public class Level {
-    private Background farBackground;
+    private final int width;
+    private final int height;
 
-    private int height;
-    private int width;
+    private final LevelPath path;
 
-
-
+    public Level(int width, int height, LevelPath path) {
+        this.width = width;
+        this.height = height;
+        this.path = path;
+    }
 }
