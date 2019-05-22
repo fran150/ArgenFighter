@@ -1,7 +1,7 @@
-package ar.com.pachisoft.argenfighter.world.level;
+package ar.com.pachisoft.argenfighter.world.levels;
 
 /**
- * Point marking the floor limits on each level
+ * Point marking the floor limits on each levels
  *
  * A set of PathLimits defines a polygon where the player is free to walk.
  */

@@ -1,5 +1,8 @@
 package ar.com.pachisoft.argenfighter;
 
+import ar.com.pachisoft.argenfighter.main.GameLoop;
+import ar.com.pachisoft.argenfighter.main.MainWindow;
+
 /**
  * Main game class
  */

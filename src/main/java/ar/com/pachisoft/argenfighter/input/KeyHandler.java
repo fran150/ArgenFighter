@@ -1,4 +1,4 @@
-package ar.com.pachisoft.argenfighter;
+package ar.com.pachisoft.argenfighter.input;
 
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;

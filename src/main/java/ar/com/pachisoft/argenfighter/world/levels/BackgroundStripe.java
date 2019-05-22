@@ -1,4 +1,4 @@
-package ar.com.pachisoft.argenfighter.world.level;
+package ar.com.pachisoft.argenfighter.world.levels;
 
 import java.awt.*;
 

@@ -1,4 +1,4 @@
-package ar.com.pachisoft.argenfighter;
+package ar.com.pachisoft.argenfighter.world.characters;
 
 import java.awt.*;
 import java.util.HashMap;

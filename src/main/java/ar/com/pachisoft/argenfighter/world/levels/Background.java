@@ -1,9 +1,9 @@
-package ar.com.pachisoft.argenfighter.world.level;
+package ar.com.pachisoft.argenfighter.world.levels;
 
 import java.awt.*;
 
 /**
- * Represents the level background
+ * Represents the levels background
  */
 public class Background {
     // Far background fixed image

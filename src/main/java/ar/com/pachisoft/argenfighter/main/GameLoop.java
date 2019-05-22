@@ -1,4 +1,8 @@
-package ar.com.pachisoft.argenfighter;
+package ar.com.pachisoft.argenfighter.main;
+
+import ar.com.pachisoft.argenfighter.world.characters.Character;
+import ar.com.pachisoft.argenfighter.Game;
+import ar.com.pachisoft.argenfighter.input.MouseHandler;
 
 import java.awt.*;
 import java.awt.image.BufferStrategy;

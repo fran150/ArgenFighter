@@ -1,7 +1,7 @@
 package ar.com.pachisoft.argenfighter.tests;
 
-import ar.com.pachisoft.argenfighter.world.level.*;
-import ar.com.pachisoft.argenfighter.world.level.exceptions.*;
+import ar.com.pachisoft.argenfighter.world.levels.*;
+import ar.com.pachisoft.argenfighter.world.levels.exceptions.*;
 import org.junit.jupiter.api.*;
 
 import java.util.ArrayList;

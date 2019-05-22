@@ -1,6 +1,6 @@
-package ar.com.pachisoft.argenfighter.world.level.exceptions;
+package ar.com.pachisoft.argenfighter.world.levels.exceptions;
 
-import ar.com.pachisoft.argenfighter.world.level.PathLimitType;
+import ar.com.pachisoft.argenfighter.world.levels.PathLimitType;
 
 public class PathLimitsEmptyException extends Exception {
     private final PathLimitType type;

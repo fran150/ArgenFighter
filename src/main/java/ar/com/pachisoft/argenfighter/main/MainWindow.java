@@ -1,4 +1,7 @@
-package ar.com.pachisoft.argenfighter;
+package ar.com.pachisoft.argenfighter.main;
+
+import ar.com.pachisoft.argenfighter.input.KeyHandler;
+import ar.com.pachisoft.argenfighter.input.MouseHandler;
 
 import javax.swing.*;
 import java.awt.*;

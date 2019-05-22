@@ -1,13 +1,13 @@
-package ar.com.pachisoft.argenfighter.world.level;
+package ar.com.pachisoft.argenfighter.world.levels;
 
-import ar.com.pachisoft.argenfighter.world.level.exceptions.PathLimitsEmptyException;
+import ar.com.pachisoft.argenfighter.world.levels.exceptions.PathLimitsEmptyException;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 /**
- * Represents a path for the player to freely walk on the level
+ * Represents a path for the player to freely walk on the levels
  *
  * A set of upper and lower points forms a polygon where the player can freely walk.
  * Walk outside this polygon will not be allowed
@@ -17,10 +17,10 @@ public class LevelPath {
     private final List<PathLimit> lowerLimits;
 
     /**
-     * Creates a new level path.
+     * Creates a new levels path.
      *
      * It allows to define a set of points for the upper and lower bounds of the path that
-     * the player is allowed to walk inside each level.
+     * the player is allowed to walk inside each levels.
      * Player movement outside the path will not be allowed
      * If only one point is specified the path bound will be and horizontal line passing through
      * the specified point

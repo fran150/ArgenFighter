@@ -1,7 +1,7 @@
-package ar.com.pachisoft.argenfighter.world.level;
+package ar.com.pachisoft.argenfighter.world.levels;
 
 /**
- * A game level
+ * A game levels
  *
  * This class allows to configure each of the game's levels.
  *
