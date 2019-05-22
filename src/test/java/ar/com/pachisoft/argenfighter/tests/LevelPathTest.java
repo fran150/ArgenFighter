@@ -32,7 +32,7 @@ class LevelPathTest {
 
     @Test
     @DisplayName("Path with empty limits should throw error")
-    void ShouldThrowException() {
+    void shouldThrowException() {
         ArrayList<PathLimit> limits = new ArrayList<>();
         limits.add(new PathLimit(0, 150));
 
@@ -49,7 +49,7 @@ class LevelPathTest {
 
     @Test
     @DisplayName("Trying to get a value outside the path bound should return the leftmost or rightmost bound")
-    void OutsideBounds() {
+    void outsideBounds() {
         int y = path.getLimitAt(-10, PathLimitType.UPPER);
         assertEquals(100, y);
 
@@ -65,7 +65,7 @@ class LevelPathTest {
 
     @Test
     @DisplayName("It should interpolate between limit points")
-    void ShouldIterpolateBetweenPoints() {
+    void shouldIterpolateBetweenPoints() {
         int y = path.getLimitAt(50, PathLimitType.UPPER);
         assertEquals(125, y);
 
