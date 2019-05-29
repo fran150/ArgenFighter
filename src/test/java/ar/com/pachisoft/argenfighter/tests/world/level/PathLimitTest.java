@@ -1,4 +1,4 @@
-package ar.com.pachisoft.argenfighter.tests;
+package ar.com.pachisoft.argenfighter.tests.world.level;
 
 import ar.com.pachisoft.argenfighter.world.levels.PathLimit;
 import org.junit.jupiter.api.Assertions;
