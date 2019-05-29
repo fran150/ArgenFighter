@@ -5,7 +5,7 @@ package ar.com.pachisoft.argenfighter.world.levels;
  *
  * A set of PathLimits defines a polygon where the player is free to walk.
  */
-public class PathLimit implements Comparable<PathLimit> {
+public final class PathLimit implements Comparable<PathLimit> {
     private final int x;
     private final int y;
 
