@@ -1,33 +1,31 @@
 package ar.com.pachisoft.argenfighter.main;
 
-import ar.com.pachisoft.argenfighter.world.characters.Character;
 import ar.com.pachisoft.argenfighter.Game;
 import ar.com.pachisoft.argenfighter.input.MouseHandler;
 
 import java.awt.*;
 import java.awt.image.BufferStrategy;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * Main game loop implementation
  */
-public class GameLoop {
+public final class GameLoop {
     /**
      * Number of nano seconds in a second
      */
-    private static double NANO_SECONDS = 1000000000;
-    /**
-     * Number of physics steps per second
-     */
-    private static double PHYSICS_STEP_SIZE = 60;
-    /**
-     * Time for each physics step
-     */
-    private static double FRAME_TIME = 1.0 / PHYSICS_STEP_SIZE;
+    private static final double NANO_SECONDS = 1000000000;
 
-    private HashSet<Character> characters;
+    // List of game objects
+    private final Map<String, GameObject> gameObjects;
+    private final Set<Renderable> renderables;
+    private final Set<TimeSteppable> timeSteppables;
 
 
+    // Frames per second and steps per second
     private int fps = 0;
     private int tps = 0;
 
@@ -35,33 +33,72 @@ public class GameLoop {
      * Creates a new game loop
      */
     public GameLoop() {
-        characters = new HashSet<>();
+        gameObjects = new HashMap<>();
+        renderables = new HashSet<>();
+        timeSteppables = new HashSet<>();
     }
 
     /**
-     * Adds the specified object to the game loop
+     * Check if the game object exists in the renderables and steppables sets and removes from them
      *
-     * @param character Character to add
+     * @param prev Object to remove from the sets
      */
-    public void add(Character character) {
-        characters.add(character);
+    private void removeFromSets(GameObject prev) {
+        if (prev != null) {
+            if (prev instanceof Renderable) {
+                renderables.remove(prev);
+            }
+
+            if (prev instanceof TimeSteppable) {
+                timeSteppables.remove(prev);
+            }
+        }
     }
 
     /**
-     * Removes the specified object to the game loop
+     * Add a game object to the game loop
+     * If the object is a Renderable object it will be processed on the render loop
+     * If the object is a TimeSteppable object it will be processed on the physics loop
+     * If a object with the same name exists in the game loop it will be replaced by the new one
      *
-     * @param character Character to remove
+     * @param gameObject Object to add to the game loop
      */
-    public void remove(Character character) {
-        characters.remove(character);
+    public void add(GameObject gameObject) {
+        GameObject prev = gameObjects.put(gameObject.getName(), gameObject);
+        removeFromSets(prev);
+
+        if (gameObject instanceof Renderable) {
+            renderables.add((Renderable) gameObject);
+        }
+
+        if (gameObject instanceof TimeSteppable) {
+            timeSteppables.add((TimeSteppable) gameObject);
+        }
+    }
+
+    /**
+     * Remove the object with the specified name from the game loop
+     *
+     * @param name Name of the object to remove
+     */
+    public void remove(String name) {
+        GameObject prev = gameObjects.remove(name);
+        removeFromSets(prev);
+    }
+
+    /**
+     * Remove the object from the game loop
+     *
+     * @param gameObject Game object to remove from the loop
+     */
+    public void remove(GameObject gameObject) {
+        remove(gameObject.getName());
     }
 
     /**
      * Render step of the game loop
-     *
-     * @param dt Delta time for this step
      */
-    private void render(double dt) {
+    private void render() {
         // Gets the game's main window
         MainWindow win = Game.getMainWindow();
 
@@ -81,8 +118,8 @@ public class GameLoop {
         graphics.fillRect(0, 0, win.getWidth(), win.getHeight());
 
         // Render all objects
-        for (Character object : characters) {
-            object.render(graphics, dt);
+        for (Renderable renderable : renderables) {
+            renderable.render(graphics);
         }
 
         // Dispose graphics system and draw buffer
@@ -92,13 +129,11 @@ public class GameLoop {
 
     /**
      * Time step for all game objects
-     *
-     * @param dt Delta time for this step
      */
-    private void timestep(double dt) {
+    private void timestep() {
         // Step all game objects physics
-        for (Character gameObject : characters) {
-            gameObject.timestep(dt);
+        for (TimeSteppable timeSteppable : timeSteppables) {
+            timeSteppable.timestep();
         }
     }
 
@@ -107,7 +142,7 @@ public class GameLoop {
      */
     public void loop() {
         // Time step size
-        double dt = 0;
+        double dt;
         // Current physics time step size
         double physicStep = 0;
         // Store the current time to calculate the time step
@@ -132,11 +167,11 @@ public class GameLoop {
                 physicStep += dt;
 
                 // If physic step is complete... step
-                if (physicStep >= FRAME_TIME) {
+                if (physicStep >= GameConsts.FRAME_TIME) {
                     // Remove used time from remaining physics time
-                    physicStep -= FRAME_TIME;
+                    physicStep -= GameConsts.FRAME_TIME;
 
-                    timestep(FRAME_TIME);
+                    timestep();
 
                     tFrames++;
 
@@ -144,7 +179,7 @@ public class GameLoop {
                 }
             }
 
-            render(dt);
+            render();
             rFrames++;
 
             if (System.currentTimeMillis() - timer > 1000) {
@@ -159,5 +194,23 @@ public class GameLoop {
                 tFrames = 0;
             }
         }
+    }
+
+    /**
+     * Get the current frames per second
+     *
+     * @return Frames per second
+     */
+    public int getFps() {
+        return fps;
+    }
+
+    /**
+     * Get the current steps per second
+     *
+     * @return Steps per second
+     */
+    public int getTps() {
+        return tps;
     }
 }

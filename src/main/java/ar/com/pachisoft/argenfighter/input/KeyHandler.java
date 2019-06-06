@@ -7,7 +7,7 @@ import java.util.HashSet;
 /**
  * Handles keyboard input over a window
  */
-public class KeyHandler extends KeyAdapter {
+public final class KeyHandler extends KeyAdapter {
     /**
      * Set of currently pressed keys
      */

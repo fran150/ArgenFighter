@@ -7,9 +7,9 @@ import javax.swing.*;
 import java.awt.*;
 
 /**
- * Represents a window in the game
+ * Represents the main window in the game
  */
-public class MainWindow extends Canvas {
+public final class MainWindow extends Canvas {
     /**
      * Creates the main game window
      *
@@ -30,7 +30,7 @@ public class MainWindow extends Canvas {
      * @param height Main game window height
      * @param title Window title
      */
-    protected void initMainWindow(int width, int height, String title) {
+    private void initMainWindow(int width, int height, String title) {
         JFrame frame = new JFrame(title);
 
         Dimension dimension = new Dimension(width, height);
@@ -52,14 +52,14 @@ public class MainWindow extends Canvas {
     /**
      * Attach a keyboard handler to the window
      */
-    protected void initKeyboardHandler() {
+    private void initKeyboardHandler() {
         addKeyListener(new KeyHandler());
     }
 
     /**
      * Attach a mouse handler to the window
      */
-    protected void initMouseHandler() {
+    private void initMouseHandler() {
         MouseHandler mouseHandler = new MouseHandler();
         addMouseListener(mouseHandler);
         addMouseMotionListener(mouseHandler);

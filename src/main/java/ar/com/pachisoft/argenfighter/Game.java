@@ -16,13 +16,11 @@ public class Game implements Runnable {
     private static GameLoop gameLoop;
 
     /**
-     * Called when application is loop.
-     *
-     * Initializes the game and starts it.
+     * Application main entry point
      *
      * @param args command line arguments
      */
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Game.init(args);
         Game.start();
     }
@@ -30,7 +28,7 @@ public class Game implements Runnable {
     /**
      * Initialize main window and game loop
      */
-    protected static void init(String args[]) {
+    protected static void init(String[] args) {
         mainWindow = new MainWindow(1024, 768, "Ship Command");
 
         gameLoop = new GameLoop();
@@ -107,7 +105,7 @@ public class Game implements Runnable {
     /**
      * Starts the main game thread
      */
-    public static synchronized void start() {
+    private static synchronized void start() {
         thread = new Thread(new Game());
         thread.start();
         running = true;

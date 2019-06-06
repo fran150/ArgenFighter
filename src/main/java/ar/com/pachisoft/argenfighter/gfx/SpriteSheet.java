@@ -1,7 +1,5 @@
 package ar.com.pachisoft.argenfighter.gfx;
 
-import ar.com.pachisoft.argenfighter.gfx.exceptions.SpriteCoordinatesOutOfBoundsException;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,14 +36,10 @@ public class SpriteSheet {
     public SpriteSheet(Texture texture, int width, int height, SpriteFlippingOptions flip) {
         this(texture);
 
-        try {
-            for (int y = 0; y < texture.getHeight(); y += height) {
-                for (int x = 0; x < texture.getWidth(); x += width) {
-                    add(x, y, width, height, flip);
-                }
+        for (int y = 0; y < texture.getHeight(); y += height) {
+            for (int x = 0; x < texture.getWidth(); x += width) {
+                add(x, y, width, height, flip);
             }
-        } catch (SpriteCoordinatesOutOfBoundsException e) {
-            throw new RuntimeException("Error processing sprite sheet", e);
         }
     }
 
@@ -70,10 +64,8 @@ public class SpriteSheet {
      * @param width Width of the sprite
      * @param height Height of the sprite
      * @param flip Indicate if the sprite must be flipped in any direction
-     * @throws SpriteCoordinatesOutOfBoundsException Produced if the specified coordinates are out of the texture
      */
-    public void add(int x, int y, int width, int height, SpriteFlippingOptions flip)
-            throws SpriteCoordinatesOutOfBoundsException {
+    public void add(int x, int y, int width, int height, SpriteFlippingOptions flip) {
         Sprite sprite = new Sprite(texture, x, y, width, height, flip);
         sprites.add(sprite);
     }
@@ -88,10 +80,8 @@ public class SpriteSheet {
      * @param height Height of the sprites
      * @param count Number of sprites to extract
      * @param flip Indicate if the sprites must be flipped in any direction
-     * @throws SpriteCoordinatesOutOfBoundsException Produced if the specified coordinates are out of the texture
      */
-    public void add(int x, int y, int width, int height, int count, SpriteFlippingOptions flip)
-            throws SpriteCoordinatesOutOfBoundsException {
+    public void add(int x, int y, int width, int height, int count, SpriteFlippingOptions flip) {
         for (int i = 0; i < count; i++) {
             add(x, y, width, height, flip);
             x += width;

@@ -5,7 +5,7 @@ import ar.com.pachisoft.argenfighter.gfx.Texture;
 /**
  * Thrown if the specified coordinates for creating a sprite from a texture are out of the texture's bounds
  */
-public class SpriteCoordinatesOutOfBoundsException extends Exception {
+public class SpriteCoordinatesOutOfBoundsException extends RuntimeException {
     private final int requestedX;
     private final int requestedY;
     private final int requestedWidth;

@@ -27,11 +27,8 @@ public class Sprite {
      * @param width width of the sprite in pixels
      * @param height height of the sprite in pixels
      * @param flip Indicates if the sprite must be flipped in some direction
-     * @throws SpriteCoordinatesOutOfBoundsException Exception produced when the specified coordinates
-     * are out of the texture coordinates
      */
-    public Sprite(Texture texture, int x, int y, int width, int height, SpriteFlippingOptions flip)
-        throws SpriteCoordinatesOutOfBoundsException {
+    public Sprite(Texture texture, int x, int y, int width, int height, SpriteFlippingOptions flip) {
 
         // If the specified coordinates are out of texture bound throw exception
         if (x < 0 || y < 0 || (x + width) > texture.getWidth() || (y + height) > texture.getHeight()) {
@@ -57,11 +54,8 @@ public class Sprite {
      * @param y Y axis coordinate in the texture of the upper left corner of the sprite
      * @param width width of the sprite in pixels
      * @param height height of the sprite in pixels
-     * @throws SpriteCoordinatesOutOfBoundsException Exception produced when the specified coordinates
-     * are out of the texture coordinates
      */
-    public Sprite(Texture texture, int x, int y, int width, int height)
-            throws SpriteCoordinatesOutOfBoundsException {
+    public Sprite(Texture texture, int x, int y, int width, int height) {
         this(texture, x, y, width, height, SpriteFlippingOptions.FLIP_NONE);
     }
 

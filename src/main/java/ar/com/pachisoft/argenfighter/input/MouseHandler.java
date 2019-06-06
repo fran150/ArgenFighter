@@ -8,7 +8,7 @@ import java.util.HashSet;
 /**
  * Handles mouse input
  */
-public class MouseHandler extends MouseAdapter {
+public final class MouseHandler extends MouseAdapter {
     private static HashSet<Integer> pressed = new HashSet<>();
     private static int x = 0;
     private static int y = 0;
