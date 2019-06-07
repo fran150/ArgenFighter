@@ -154,6 +154,8 @@ public final class GameLoop {
         int rFrames = 0;
         int tFrames = 0;
 
+        boolean canRender = false;
+
         while (Game.isRunning()) {
             // Get current nano time
             long now = System.nanoTime();
@@ -176,11 +178,23 @@ public final class GameLoop {
                     tFrames++;
 
                     MouseHandler.update();
+
+                    canRender = true;
+                } else {
+                    canRender = false;
                 }
             }
 
-            render();
-            rFrames++;
+            try {
+                Thread.sleep(1);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+            if (canRender) {
+                render();
+                rFrames++;
+            }
 
             if (System.currentTimeMillis() - timer > 1000) {
                 timer += 1000;

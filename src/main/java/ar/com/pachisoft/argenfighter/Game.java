@@ -2,6 +2,9 @@ package ar.com.pachisoft.argenfighter;
 
 import ar.com.pachisoft.argenfighter.main.GameLoop;
 import ar.com.pachisoft.argenfighter.main.MainWindow;
+import ar.com.pachisoft.argenfighter.world.characters.Trump;
+
+import java.io.IOException;
 
 /**
  * Main game class
@@ -29,7 +32,7 @@ public class Game implements Runnable {
      * Initialize main window and game loop
      */
     protected static void init(String[] args) {
-        mainWindow = new MainWindow(1024, 768, "Ship Command");
+        mainWindow = new MainWindow(1024, 768, "Trump Run!!");
 
         gameLoop = new GameLoop();
         initialize();
@@ -39,6 +42,15 @@ public class Game implements Runnable {
      * Initialize the game
      */
     private static void initialize() {
+        Trump donald = null;
+        try {
+            donald = new Trump();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        gameLoop.add(donald);
+
         runPhysics();
     }
 

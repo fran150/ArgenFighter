@@ -7,11 +7,11 @@ import org.jetbrains.annotations.NotNull;
 
 public final class AnimationStep {
     private Sprite sprite;
-    private int duration;
+    private double duration;
     private boolean hitOtherCharacter;
     private ReadonlyLevelCoordinates hitCoordinates;
 
-    public AnimationStep(@NotNull Sprite sprite, int duration, boolean hitOtherCharacter, ReadonlyLevelCoordinates hitCoordinates) {
+    public AnimationStep(@NotNull Sprite sprite, double duration, boolean hitOtherCharacter, ReadonlyLevelCoordinates hitCoordinates) {
         if (duration < GameConsts.FRAME_TIME) {
             throw new AnimationStepTooShortException(duration);
         }
@@ -22,7 +22,7 @@ public final class AnimationStep {
         this.hitCoordinates = hitCoordinates;
     }
 
-    public AnimationStep(Sprite sprite, int duration) {
+    public AnimationStep(Sprite sprite, double duration) {
         this(sprite, duration, false, null);
     }
 
@@ -30,7 +30,7 @@ public final class AnimationStep {
         return sprite;
     }
 
-    public int getDuration() {
+    public double getDuration() {
         return duration;
     }
 
